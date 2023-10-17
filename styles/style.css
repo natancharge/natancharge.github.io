@@ -342,28 +342,28 @@ section {
   transition: var(--transition);
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
+  width: 33%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .css {
-  width: 75%;
+  width: 33%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 60%;
+  width: 33%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .python {
-  width: 97%;
+  width: 99%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .csharp {
-  width: 97%;
+  width: 66%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .xaml {
-  width: 80%;
+  width: 66%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .scss {
-  width: 80%;
+  width: 33%;
 }
 .about-skills .progress-bars .progress-bar .progress-con .progress .sql {
-  width: 70%;
+  width: 99%;
 }
 
 .skills-title {
