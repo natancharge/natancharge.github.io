@@ -928,6 +928,10 @@ section {
   .main-title h2 .bg-txt {
     font-size: 3rem;
   }
+  .timeline {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+  }
   .controls {
     top: 0;
     bottom: auto;

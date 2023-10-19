@@ -249,6 +249,11 @@
         }
     }
 
+    .timeline {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+    }
+
     .controls {
         top: 0;
         bottom: auto;
