@@ -60,26 +60,26 @@ const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
-    '#007acc',
-    '#007acc',
-    '#0043bf',
-    '#0027b8',
-    '#000ab2',
-    '#1407a8',
-    '#2c05a0',
-    '#420397',
-    '#59008f',
-    '#6f007e',
-    '#85006e',
-    '#9b005d',
-    '#b1004c',
-    '#c7003b',
-    '#dd002b',
-    '#f3001a',
-    '#ff0e0d',
-    '#ff3a13',
-    '#ff7f50',
-    '#ff7f50'
+    '#00FFF5',
+    '#11F5EE',
+    '#21F0E7',
+    '#32EAE0',
+    '#42E4D9',
+    '#53DFD2',
+    '#63D9CB',
+    '#74D3C4',
+    '#84CDCD',
+    '#95C7C6',
+    '#A5C2BF',
+    '#B6BCB8',
+    '#C6B6B1',
+    '#D7B0AA',
+    '#E7AAA3',
+    '#F8A49C',
+    '#FF9E95',
+    '#FF887D',
+    '#FF7264',
+    '#FF7F50'
   ];  
   
 circles.forEach(function (circle, index) {
