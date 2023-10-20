@@ -862,9 +862,16 @@ section {
     }
 }
 
+// On Scroll Animation 
+.hidden {
 
-@import './media';
+}
 
+.show {
+
+}
+
+// The cursor
 .circle {
     height: 24px;
     width: 24px;
@@ -878,4 +885,7 @@ section {
 
     opacity: 0;
     transition: opacity 500ms ease;
-  }
+}
+
+
+@import './media';

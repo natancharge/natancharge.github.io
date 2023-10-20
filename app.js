@@ -119,3 +119,17 @@ function animateCircles() {
 animateCircles();
 
 //Appears On Scrolling
+const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.add.classList('show'); // For viewing the animation once
+        } else {
+            entry.target.remove('show'); // For viewing it multiple times
+        }
+
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
