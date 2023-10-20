@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Cursor Animation
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
@@ -116,3 +117,5 @@ function animateCircles() {
 }
 
 animateCircles();
+
+//Appears On Scrolling
