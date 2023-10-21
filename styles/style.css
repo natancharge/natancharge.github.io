@@ -367,6 +367,12 @@ section {
 .about-skills .progress-bars .progress-bar .progress-con .progress .sql {
   width: 99%;
 }
+.about-skills .progress-bars:nth-child(1) {
+  transition-delay: 0;
+}
+.about-skills .progress-bars:nth-child(2) {
+  transition-delay: 0;
+}
 .about-skills .progress-bars:nth-child(3) {
   transition-delay: 200ms;
 }
@@ -454,6 +460,12 @@ section {
 }
 .timeline .timeline-item p {
   color: var(--color-grey2);
+}
+.timeline:nth-child(1) {
+  transition-delay: 0;
+}
+.timeline:nth-child(2) {
+  transition-delay: 0;
 }
 .timeline:nth-child(3) {
   transition-delay: 200ms;

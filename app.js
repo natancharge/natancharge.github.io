@@ -118,16 +118,21 @@ function animateCircles() {
 
 animateCircles();
 
-//Appears On Scrolling
+// Initialize an IntersectionObserver
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // Add the 'show' class when in view
+            entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('show'); // Remove the 'show' class when out of view
+            entry.target.classList.remove('show');
         }
     });
+}, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2, // Adjust this threshold as needed
 });
 
+// Get all elements with the class 'hidden' and observe them
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
