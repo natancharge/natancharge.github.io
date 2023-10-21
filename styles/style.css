@@ -367,26 +367,23 @@ section {
 .about-skills .progress-bars .progress-bar .progress-con .progress .sql {
   width: 99%;
 }
-.about-skills .progress-bars:nth-child(2) {
+.about-skills .progress-bars:nth-child(3) {
   transition-delay: 200ms;
 }
-.about-skills .progress-bars:nth-child(3) {
-  transition-delay: 400ms;
-}
 .about-skills .progress-bars:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 200ms;
 }
 .about-skills .progress-bars:nth-child(5) {
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 .about-skills .progress-bars:nth-child(6) {
-  transition-delay: 1s;
+  transition-delay: 400ms;
 }
 .about-skills .progress-bars:nth-child(7) {
-  transition-delay: 1.2s;
+  transition-delay: 600ms;
 }
 .about-skills .progress-bars:nth-child(8) {
-  transition-delay: 1.4s;
+  transition-delay: 600ms;
 }
 
 .skills-title {
@@ -458,26 +455,20 @@ section {
 .timeline .timeline-item p {
   color: var(--color-grey2);
 }
-.timeline:nth-child(2) {
+.timeline:nth-child(3) {
   transition-delay: 200ms;
 }
-.timeline:nth-child(3) {
-  transition-delay: 400ms;
-}
 .timeline:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 200ms;
 }
 .timeline:nth-child(5) {
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 .timeline:nth-child(6) {
-  transition-delay: 1s;
+  transition-delay: 400ms;
 }
 .timeline:nth-child(7) {
-  transition-delay: 1.2s;
-}
-.timeline:nth-child(8) {
-  transition-delay: 1.4s;
+  transition-delay: 600ms;
 }
 
 .port-txt {

@@ -419,26 +419,23 @@ section {
             }
         }
 
-        &:nth-child(2) {
+        &:nth-child(3) {
             transition-delay: 200ms;
         }
-        &:nth-child(3) {
-            transition-delay: 400ms;
-        }
         &:nth-child(4) {
-            transition-delay: 600ms;
+            transition-delay: 200ms;
         }
         &:nth-child(5) {
-            transition-delay: 800ms;
+            transition-delay: 400ms;
         }
         &:nth-child(6) {
-            transition-delay: 1s;
+            transition-delay: 400ms;
         }
         &:nth-child(7) {
-            transition-delay: 1.2s;
+            transition-delay: 600ms;
         }
         &:nth-child(8) {
-            transition-delay: 1.4s;
+            transition-delay: 600ms;
         }
     }
 }
@@ -521,26 +518,20 @@ section {
         }
     }
 
-    &:nth-child(2) {
+    &:nth-child(3) {
         transition-delay: 200ms;
     }
-    &:nth-child(3) {
-        transition-delay: 400ms;
-    }
     &:nth-child(4) {
-        transition-delay: 600ms;
+        transition-delay: 200ms;
     }
     &:nth-child(5) {
-        transition-delay: 800ms;
+        transition-delay: 400ms;
     }
     &:nth-child(6) {
-        transition-delay: 1s;
+        transition-delay: 400ms;
     }
     &:nth-child(7) {
-        transition-delay: 1.2s;
-    }
-    &:nth-child(8) {
-        transition-delay: 1.4s;
+        transition-delay: 600ms;
     }
 }
 
