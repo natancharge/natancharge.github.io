@@ -195,6 +195,23 @@
             margin: .6rem 2rem !important;
         }
     }
+
+    .hidden {
+        transition: none;
+        opacity: 1 !important;
+        filter: blur(0) !important;
+        transform: translateX(0) !important;
+    }
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    .circle {
+        opacity: 0 !important;
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 700px) {

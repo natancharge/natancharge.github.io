@@ -119,20 +119,26 @@ function animateCircles() {
 animateCircles();
 
 // Initialize an IntersectionObserver
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
+if (screen.width > 970)
+{
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2, // Adjust this threshold as needed
     });
-}, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.2, // Adjust this threshold as needed
-});
 
-// Get all elements with the class 'hidden' and observe them
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+    // Get all elements with the class 'hidden' and observe them
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+}
+
+
+// Loading Screen
