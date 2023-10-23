@@ -139,6 +139,3 @@ if (screen.width > 970)
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 }
-
-
-// Loading Screen

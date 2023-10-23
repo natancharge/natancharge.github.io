@@ -614,6 +614,15 @@
         <i class="fa-solid fa-circle-half-stroke"></i>
     </div>
 
+    <div class="load-con">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="load-txt">
+            <span>Loading...</span>
+        </div>
+    </div>
+
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -636,6 +645,15 @@
     <div class="circle"></div>
 
     <script src="app.js"></script>
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(".load-con").fadeOut("slow");
+        })
+    </script>
+
 
     <!--Type JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

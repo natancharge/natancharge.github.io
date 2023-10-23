@@ -75,7 +75,6 @@ section {
 .section {
   transform: translateY(-100%) scale(0);
   transition: var(--transition);
-  background-color: var(--color-primary);
 }
 
 .sec1 {
@@ -483,6 +482,19 @@ section {
   transition-delay: 600ms;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .port-txt {
   padding: 2rem 0;
   text-align: center;
@@ -709,6 +721,65 @@ section {
   justify-content: flex-start;
 }
 
+/* Loading Screen */
+.load-con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Changed to fixed for better positioning */
+  background-color: var(--color-primary);
+  z-index: 999999;
+}
+.load-con .ring {
+  position: absolute;
+  border-radius: 50%;
+}
+.load-con .ring:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  border-top: 5px solid #00FFF5;
+  animation: rotate-forward 1.4s linear infinite;
+}
+.load-con .ring:nth-child(2) {
+  width: 230px;
+  height: 230px;
+  border-top: 5px solid #007ACC;
+  transform: rotate(85deg);
+  animation: rotate-backward 5s linear infinite;
+}
+.load-con .ring:nth-child(3) {
+  width: 210px;
+  height: 210px;
+  border-top: 5px solid #FF7F50;
+  transform: rotate(255deg);
+  animation: rotate-forward 2.2s linear infinite;
+}
+.load-con .load-txt {
+  position: absolute;
+  font-family: cursive;
+  font-size: 22px;
+  color: var(--color-white);
+  z-index: 10;
+}
+
+@keyframes rotate-forward {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-backward {
+  0% {
+    transform: rotate(3600deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /*Independent components*/
 .btn-container {
   display: flex;
@@ -779,19 +850,6 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 5.4rem;
-}
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
 }
 
 .circle {
