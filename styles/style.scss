@@ -830,10 +830,62 @@ section {
             }
         }
 
-        .submit-btn {
-            display: flex;
-            justify-content: flex-start;
-        }
+        .submit-btn-con {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            width: 180px;
+            height: 50px;
+            border-radius: 30em;
+            font-size: 20px;
+            font-family: inherit;
+            overflow: hidden;
+        
+            .submit-btn {
+                width: 80%;
+                height: 100%;
+                border-radius: 30em;
+                font-family: inherit;
+                font-size: 20px;
+                font-weight: 600;
+                border: none;
+                background-color: transparent;
+                color: var(--color-white);
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+                transition: background-color 0.5s ease;
+            }
+        
+            i {
+                color: var(--color-white); /* Color of the icon */
+                display: none;
+                z-index: 1;
+            }
+        
+            &::before {
+                content: '';
+                width: 0;
+                height: 100%;
+                border-radius: 30em;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 50%);
+                transition: width 0.5s ease, box-shadow 0.5s ease;
+            }
+        
+            &:hover {
+                i {
+                    display: block; /* Show the icon when the container is hovered */
+                }
+        
+                &::before {
+                    width: 100%;
+                    box-shadow: 6px 6px 12px var(--color-grey3), -6px -6px 12px var(--color-white);
+                }
+            }
+        }                
     }
 }
 
