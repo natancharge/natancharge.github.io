@@ -726,6 +726,7 @@ section {
   font-size: 20px;
   font-family: inherit;
   overflow: hidden;
+  cursor: pointer;
 }
 .contact-content-container .right-contact .submit-btn-con .submit-btn {
   width: 80%;
