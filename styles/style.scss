@@ -655,7 +655,7 @@ section {
 //Blogs Section
 .blogs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); // ! Remember to change to 3.
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
 
