@@ -112,7 +112,7 @@ animateCircles();
 // Type Effect
 document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed('.typed', {
-        strings: ["Web Developer", "Software Engineer", "Designer", "Singer", "Presenter", "Artist", "Game Developer", "DATA Analyst"],
+        strings: ["Frontend Developer", "Software Engineer", "Singer", "Presenter", "Artist", "DATA Analyst", "Social Media Manager", "Community Manager", "Chief Operating Officer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
