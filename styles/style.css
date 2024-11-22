@@ -306,107 +306,65 @@ section {
 }
 
 .about-skills {
-  padding-bottom: 4rem;
+  padding: 4rem 2rem;
 }
-.about-skills .progress-bars {
-  display: grid;
-  grid-template-columns: var(--grid-col);
-  grid-gap: 2rem;
-}
-.about-skills .progress-bars .progress-bar {
-  display: flex;
-  flex-direction: column;
-}
-.about-skills .progress-bars .progress-bar .prog-title {
+.about-skills .skills-title {
   text-transform: uppercase;
-  font-weight: 500;
-}
-.about-skills .progress-bars .progress-bar .progress-con {
-  display: flex;
-  align-items: center;
-}
-.about-skills .progress-bars .progress-bar .progress-con .prog-txt {
-  color: var(--color-grey2);
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress {
-  width: 100%;
-  height: 0.45rem;
-  background-color: var(--color-grey4);
-  margin-left: 1rem;
-  position: relative;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--color-secondary);
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .html {
-  width: 33%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .css {
-  width: 33%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 33%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .python {
-  width: 99%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .csharp {
-  width: 66%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .xaml {
-  width: 66%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .scss {
-  width: 33%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .sql {
-  width: 99%;
-}
-.about-skills .progress-bars:nth-child(1) {
-  transition-delay: 0;
-}
-.about-skills .progress-bars:nth-child(2) {
-  transition-delay: 0;
-}
-.about-skills .progress-bars:nth-child(3) {
-  transition-delay: 200ms;
-}
-.about-skills .progress-bars:nth-child(4) {
-  transition-delay: 200ms;
-}
-.about-skills .progress-bars:nth-child(5) {
-  transition-delay: 400ms;
-}
-.about-skills .progress-bars:nth-child(6) {
-  transition-delay: 400ms;
-}
-.about-skills .progress-bars:nth-child(7) {
-  transition-delay: 600ms;
-}
-.about-skills .progress-bars:nth-child(8) {
-  transition-delay: 600ms;
-}
-
-.skills-title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 3.5rem 0;
+  margin-bottom: 2rem;
   position: relative;
 }
-.skills-title::before {
+.about-skills .skills-title::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: 0;
-  width: 60%;
-  height: 2.5px;
-  background-color: var(--color-grey4);
+  bottom: -0.5rem;
+  width: 50%;
+  height: 2px;
+  background: var(--color-secondary);
   transform: translateX(-50%);
+}
+.about-skills .skill-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.about-skills .skill-categories .category {
+  width: 100%;
+  max-width: 300px;
+  background: var(--color-grey4);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.about-skills .skill-categories .category h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.about-skills .skill-categories .category .skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-skills .skill-categories .category .skills-list .skill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-skills .skill-categories .category .skills-list .skill i {
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+.about-skills .skill-categories .category .skills-list .skill p {
+  margin: 0;
+}
+.about-skills .skill-categories .category .skills-list .skill p.experience {
+  font-size: 0.9rem;
+  color: var(--color-grey2);
 }
 
 /*TimeLine*/
