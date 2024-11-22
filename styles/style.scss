@@ -6,8 +6,8 @@
 }
 
 :root {
-    --color-primary: #212121;
-    --color-secondary: #00FFF5;
+    --color-primary: #0A0908;
+    --color-secondary: #F2542D;
     --color-white: #ffffff;
     --color-black: #000000;
     --color-grey0: #f8f9fa;
@@ -23,17 +23,18 @@
 }
 
 .light-mode {
-    --color-primary: #007ACC;        /* A cool blue color */
-    --color-secondary: #FF7F50;     /* A coral-orange color */
-    --color-white: #ffffff;         /* White for background */
-    --color-black: #000000;         /* Black for text */
-    --color-grey0: #f5f5f5;         /* Slightly warmer light grey */
-    --color-grey1: #e0e0e0;         /* Light grey */
-    --color-grey2: #b0b0b0;         /* Medium grey */
-    --color-grey3: #808080;         /* Slightly darker grey */
-    --color-grey4: #404040;         /* Dark grey */
-    --color-grey5: #212121;         /* Darkest grey for text */
+    --color-primary: #F7C59F;
+    --color-secondary: #FF6B35;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey0: #f5f5f5;
+    --color-grey1: #212121;
+    --color-grey2: #404040;
+    --color-grey3: #808080;
+    --color-grey4: #b0b0b0;
+    --color-grey5: #E6B9A6;
 }
+
 
 html {
     scroll-behavior: smooth;
