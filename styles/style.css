@@ -786,6 +786,11 @@ section {
   box-shadow: 6px 6px 12px var(--color-grey3), -6px -6px 12px var(--color-white);
 }
 
+#timelineHeading {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
 .main-title {
   text-align: center;
 }
